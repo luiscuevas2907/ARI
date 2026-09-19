@@ -1,0 +1,355 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Área y Perímetro de Figuras</title>
+
+    <link rel="stylesheet" href="maka.css">
+</head>
+
+<body>
+
+
+
+    <div id="menu">
+
+        <h1>Formulario de Área y Perímetro</h1>
+
+        <p>Selecciona una figura geométrica</p>
+
+        <div class="menu">
+
+            <button onclick="mostrarFigura('triangulo')">
+                Triángulo Equilátero
+            </button>
+
+            <button onclick="mostrarFigura('cuadrado')">
+                Cuadrado
+            </button>
+
+            <button onclick="mostrarFigura('rectangulo')">
+                Rectángulo
+            </button>
+
+            <button onclick="mostrarFigura('rombo')">
+                Rombo
+            </button>
+
+            <button onclick="mostrarFigura('romboide')">
+                Romboide
+            </button>
+
+            <button onclick="mostrarFigura('trapecio')">
+                Trapecio
+            </button>
+
+            <button onclick="mostrarFigura('pentagono')">
+                Pentágono
+            </button>
+
+            <button onclick="mostrarFigura('hexagono')">
+                Hexágono
+            </button>
+
+            <button onclick="mostrarFigura('circulo')">
+                Círculo
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- TRIÁNGULO -->
+
+    <div id="triangulo" class="figura">
+
+        <div class="formulario">
+
+            <h2>Triángulo Equilátero</h2>
+
+            <p>Ingresa las medidas</p>
+
+            <input type="number" id="ladoTriangulo" placeholder="Lado">
+
+            <input type="number" id="baseTriangulo" placeholder="Base">
+
+            <input type="number" id="alturaTriangulo" placeholder="Altura">
+
+            <br>
+
+            <button class="calcular" onclick="calcularTriangulo()">
+                Calcular
+            </button>
+
+            <div id="resultadoTriangulo" class="resultado"></div>
+
+            <button class="regresar" onclick="regresar()">
+                Regresar al menú
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- CUADRADO -->
+
+    <div id="cuadrado" class="figura">
+
+        <div class="formulario">
+
+            <h2>Cuadrado</h2>
+
+            <p>Ingresa el lado</p>
+
+            <input type="number" id="ladoCuadrado" placeholder="Lado">
+
+            <br>
+
+            <button class="calcular" onclick="calcularCuadrado()">
+                Calcular
+            </button>
+
+            <div id="resultadoCuadrado" class="resultado"></div>
+
+            <button class="regresar" onclick="regresar()">
+                Regresar al menú
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- RECTÁNGULO -->
+
+    <div id="rectangulo" class="figura">
+
+        <div class="formulario">
+
+            <h2>Rectángulo</h2>
+
+            <p>Ingresa las medidas</p>
+
+            <input type="number" id="baseRectangulo" placeholder="Base">
+
+            <input type="number" id="alturaRectangulo" placeholder="Altura">
+
+            <br>
+
+            <button class="calcular" onclick="calcularRectangulo()">
+                Calcular
+            </button>
+
+            <div id="resultadoRectangulo" class="resultado"></div>
+
+            <button class="regresar" onclick="regresar()">
+                Regresar al menú
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ROMBO -->
+
+    <div id="rombo" class="figura">
+
+        <div class="formulario">
+
+            <h2>Rombo</h2>
+
+            <p>Ingresa las medidas</p>
+
+            <input type="number" id="ladoRombo" placeholder="Lado">
+
+            <input type="number" id="diagonalMayor" placeholder="Diagonal mayor">
+
+            <input type="number" id="diagonalMenor" placeholder="Diagonal menor">
+
+            <br>
+
+            <button class="calcular" onclick="calcularRombo()">
+                Calcular
+            </button>
+
+            <div id="resultadoRombo" class="resultado"></div>
+
+            <button class="regresar" onclick="regresar()">
+                Regresar al menú
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ROMBOIDE -->
+
+    <div id="romboide" class="figura">
+
+        <div class="formulario">
+
+            <h2>Romboide</h2>
+
+            <p>Ingresa las medidas</p>
+
+            <input type="number" id="baseRomboide" placeholder="Base">
+
+            <input type="number" id="ladoRomboide" placeholder="Lado">
+
+            <input type="number" id="alturaRomboide" placeholder="Altura">
+
+            <br>
+
+            <button class="calcular" onclick="calcularRomboide()">
+                Calcular
+            </button>
+
+            <div id="resultadoRomboide" class="resultado"></div>
+
+            <button class="regresar" onclick="regresar()">
+                Regresar al menú
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- TRAPECIO -->
+
+    <div id="trapecio" class="figura">
+
+        <div class="formulario">
+
+            <h2>Trapecio</h2>
+
+            <p>Ingresa las medidas</p>
+
+            <input type="number" id="baseMayor" placeholder="Base mayor">
+
+            <input type="number" id="baseMenor" placeholder="Base menor">
+
+            <input type="number" id="lado1" placeholder="Lado 1">
+
+            <input type="number" id="lado2" placeholder="Lado 2">
+
+            <input type="number" id="alturaTrapecio" placeholder="Altura">
+
+            <br>
+
+            <button class="calcular" onclick="calcularTrapecio()">
+                Calcular
+            </button>
+
+            <div id="resultadoTrapecio" class="resultado"></div>
+
+            <button class="regresar" onclick="regresar()">
+                Regresar al menú
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- PENTÁGONO -->
+
+    <div id="pentagono" class="figura">
+
+        <div class="formulario">
+
+            <h2>Pentágono</h2>
+
+            <p>Ingresa las medidas</p>
+
+            <input type="number" id="ladoPentagono" placeholder="Lado">
+
+            <input type="number" id="apotemaPentagono" placeholder="Apotema">
+
+            <br>
+
+            <button class="calcular" onclick="calcularPentagono()">
+                Calcular
+            </button>
+
+            <div id="resultadoPentagono" class="resultado"></div>
+
+            <button class="regresar" onclick="regresar()">
+                Regresar al menú
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- HEXÁGONO -->
+
+    <div id="hexagono" class="figura">
+
+        <div class="formulario">
+
+            <h2>Hexágono</h2>
+
+            <p>Ingresa las medidas</p>
+
+            <input type="number" id="ladoHexagono" placeholder="Lado">
+
+            <input type="number" id="apotemaHexagono" placeholder="Apotema">
+
+            <br>
+
+            <button class="calcular" onclick="calcularHexagono()">
+                Calcular
+            </button>
+
+            <div id="resultadoHexagono" class="resultado"></div>
+
+            <button class="regresar" onclick="regresar()">
+                Regresar al menú
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- CÍRCULO -->
+
+    <div id="circulo" class="figura">
+
+        <div class="formulario">
+
+            <h2>Círculo</h2>
+
+            <p>Ingresa el radio</p>
+
+            <input type="number" id="radio" placeholder="Radio">
+
+            <br>
+
+            <button class="calcular" onclick="calcularCirculo()">
+                Calcular
+            </button>
+
+            <div id="resultadoCirculo" class="resultado"></div>
+
+            <button class="regresar" onclick="regresar()">
+                Regresar al menú
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="maka.js"></script>
+
+</body>
+
+</html>

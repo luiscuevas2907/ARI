@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastos Personales</title>
+
+    <link rel="stylesheet" href="TAZ.CSS">
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+    <div class="contenedor">
+
+        <h1>Control de Gastos Personales</h1>
+
+        <label>Dinero disponible:</label>
+        <input type="number" id="dinero" placeholder="Ej. 5000">
+
+        <h2>Agregar gasto</h2>
+
+        <label>Nombre del gasto:</label>
+        <input type="text" id="nombreGasto" placeholder="Ej. Comida">
+
+        <label>Cantidad:</label>
+        <input type="number" id="cantidadGasto" placeholder="Ej. 200">
+
+        <button onclick="agregarGasto()">Agregar gasto</button>
+
+        <h2>Gastos registrados</h2>
+
+        <div id="listaGastos">
+            <p>No hay gastos registrados.</p>
+        </div>
+
+        <button onclick="calcularGastos()">Calcular</button>
+
+        <div class="resultado" id="resultado">
+            <p>El resultado aparecerá aquí.</p>
+        </div>
+
+    </div>
+
+    <script src="TAZ.JS"></script>
+
+</body>
+</html>
