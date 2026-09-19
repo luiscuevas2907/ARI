@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(198, 248, 198);
+    border: 20px solid black;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+}
+
+/* Subtítulo */
+h2 {
+    text-align: center;
+}
+
+/* Caja del formulario */
+fieldset {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+/* Campos */
+.caja-curva {
+    background-color: rgb(93, 210, 93);
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 12px;
+    width: 250px;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Inputs */
+.input-con-padding {
+    padding: 12px;
+    width: 250px;
+    font-size: 15px;
+    border: 1px solid #eb1919;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Botón */
+.btn-profecional {
+    background-color: rgb(93, 210, 93);
+    color: #0b0b0b;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Efecto del botón */
+.btn-profecional:hover {
+    background-color: rgb(50, 180, 50);
+}
+
+/* Resultado del IMC */
+#resultado {
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Texto */
+body > p {
+    color: #eb1919;
+    font-size: 18px;
+}
